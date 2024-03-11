@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. position</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .circulo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        #circulo1{
+            position: relative;
+            background-color: red;
+            z-index: 3;
+        }
+        #circulo2{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: green;
+            z-index: 2;
+        }
+        #circulo3{
+            position: absolute;
+            background-color: blue;
+            top: 60px;
+            left: 60px;
+            z-index: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="circulo1" class="circulo"></div>
+    
+    <div id="circulo2" class="circulo"></div>
+
+    <div id="circulo3" class="circulo"></div>
+    
+</body>
+</html>
